@@ -10,8 +10,8 @@ from scipy import ndimage as ndi
 import cv2
 cmap = matplotlib.colors.ListedColormap (np.random.rand ( 256,3))
 
-# img = io.imread(r'D:\Matlab\GrainParticleSize\NG3_GQ_Corn_11MC_59lbs_50F_2017-11-16_11-0-33_Sensor-1_Frame-36_Ts-1510851850.1548.png')
-img = io.imread(r'D:\Matlab\GrainParticleSize\NG3_GQ_Corn_32MC_53lbs_99F_2017-7-18_10-31-45_Sensor-1_Frame-32_Ts-1500374550.1573.png')
+img = io.imread(r'D:\Matlab\GrainParticleSize\NG3_GQ_Corn_11MC_59lbs_50F_2017-11-16_11-0-33_Sensor-1_Frame-36_Ts-1510851850.1548.png')
+# img = io.imread(r'D:\Matlab\GrainParticleSize\NG3_GQ_Corn_32MC_53lbs_99F_2017-7-18_10-31-45_Sensor-1_Frame-32_Ts-1500374550.1573.png')
 
 img = img/255.;
 x1 = 63;x2 = x1+597;y1 = 21;y2 = y1+439;
@@ -25,8 +25,8 @@ imgc = imgc_-np.expand_dims(background, axis=2);imgc = np.minimum(imgc - np.min(
 # imgca = exposure.equalize_adapthist(imgc)
 
 ##### hyperparameters include the disk size, the distance-transform threshold, and the gradient lines stdev ######
-dr = 20
-dt_t = 5
+dr = 25#30#20
+dt_t = 7.5#10#5
 grad_t = 4
 
 ## sure background
@@ -50,7 +50,7 @@ dist_binary1_ = morphology.remove_small_holes(util.pad(dist_binary1, (1,), 'cons
 dist_binary1_ = dist_binary1_[1:-1, 1:-1]
 # plt.figure();plt.imshow(dist_binary1_)
 ## sure foreground (use only 2nd and 3rd channels and find markers)
-fat_markers=bg[:,:,1]
+fat_markers=bg[:,:,1] ## excludes red channel or blue channel only active -- good for corn
 D2 = ndi.distance_transform_edt(fat_markers)
 dist_binary2 = D2 > dt_t
 dist_binary2 = dist_binary2.astype(np.float)
@@ -76,4 +76,5 @@ labels = cv2.watershed(imgc_,markers)
 plt.figure();plt.imshow(labels.get(), cmap=cmap)
 imgc_overlay = imgc
 imgc_overlay[labels.get() == -1] = [1,0,0]
+plt.figure();plt.imshow(imgc_overlay)
 #######################################################################
