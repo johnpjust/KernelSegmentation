@@ -9,5 +9,4 @@ Let's examine a couple images below.  Each of these images are taken the same di
 
 ## Unsupervised Learning Method #1
 
-
 <img src="Data/high_moisture_corn_labels.png" width="350" hspace="30" align="left">  <img src="Data/high_moisture_overlay.png" width="350" hspace="0" align="right">
