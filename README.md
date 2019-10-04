@@ -10,7 +10,7 @@ Let's examine a couple images below.  Each of these images are taken the same di
 ## Step #1:  Lighting Corrections
 While these images conveniently have color bands to support color corrections for different bulb outputs to maintain unit to unit consistency, we're going to ignore that for now and absorb that kind of variability into the algorithm since we don't even know for sure how reliable those bands are.  Next we trim the images and deal with non-uniform lighting.  Here we remind that most real-world images do not have uniform lighting throughout the images, which is one of the fundamental things that makes generalizing image processing algorithms difficult.  The signal (light) is not uniform and constant within and between images.  In this case, the corners/edges of the window are darker than the middle, which can cause a lot of issues with segmentation.  To deal with this, we will apply a Gaussian filter on the image to find overall lighting intensities and subtract it off the original image.
 
-<img src="Data/VignettingLowMois.png" width="350" hspace="20" align="center"> <img src="https://previews.123rf.com/images/romanika/romanika1802/romanika180202585/96728794-right-arrow-symbol-line-icon.jpg" width="10" hspace="20") <img src="Data/low_mois_vig_corrected.png" width="350" hspace="20" align="center">
+<img src="Data/VignettingLowMois.png" width="350" hspace="20" align="center"> <img src="https://previews.123rf.com/images/romanika/romanika1802/romanika180202585/96728794-right-arrow-symbol-line-icon.jpg" width="10" hspace="20"> <img src="Data/low_mois_vig_corrected.png" width="350" hspace="20" align="center">
 
 
 While the difference is subtle to our eyes, it can make a big difference with some of the algorithms we're about to use.
