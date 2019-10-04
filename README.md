@@ -9,6 +9,7 @@ Let's examine a couple images below.  Each of these images are taken the same di
 
 <br/>
 <br/>
+
 ## Unsupervised Learning Method #1
 
 
