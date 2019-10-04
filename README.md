@@ -7,7 +7,7 @@ Let's examine a couple images below.  Each of these images are taken the same di
 
 <img src="Data/NG3_GQ_Corn_11MC_59lbs_50F_2017-11-16_11-0-33_Sensor-1_Frame-36_Ts-1510851850.1548.png" width="400" hspace="10" align="left">  <img src="Data/NG3_GQ_Corn_32MC_53lbs_99F_2017-7-18_10-31-45_Sensor-1_Frame-32_Ts-1500374550.1573.png" width="400" align="right">
 
-##
+##   
 ## Unsupervised Learning Method #1
 
 
