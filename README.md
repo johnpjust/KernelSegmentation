@@ -25,3 +25,8 @@ And like so........
 <br/>
 From this we can extract properties like area and aspect ratio, as well as other factors like colors to classify kernels without labels (clustering).
 <br/><br/>
+
+
+## Unsupervised Learning Method #2
+
+We can also use generative models to find properties.  This can include linear methods (PCA) and nonlinear methods (autoencoders and variational autoencoders).
