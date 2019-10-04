@@ -36,5 +36,5 @@ These results are pretty good, and all without annotated data!! From this we can
 ## Unsupervised Deep Learning
 
 We can also use generative models to find properties, although the results may not be as intuitive, and the optimization process can be easy to mess up for non-experts in statistics and optimization.  This approach can be very useful for downstream predictive modeling tasks using machine learning though, so long as the dataset we train with is sufficiently representative of the important variations in the dataset.  This point cannot be overemphasized since a naive attempt to apply unsupervised learning here (i.e. one without both theoretical and domain knowledge) will generalize very poorly.  This can include linear methods (PCA) and nonlinear methods (autoencoders and variational autoencoders).
-<br/>
+<br/><br/><br/>
 ** unsuperivsed deep learning part to be added **
