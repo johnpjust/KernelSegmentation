@@ -1,4 +1,4 @@
-# Unsupervised Kernel Properties Extraction
+# Unsupervised Grain Kernel Properties Extraction
 
 We need to extract properties from grains to support downstream tasks.  Essentially this is feature extraction, but the end users want intuition about the features so we can't just use the old "bag-'o-features" trick.
 
