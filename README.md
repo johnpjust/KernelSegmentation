@@ -11,7 +11,7 @@ Let's examine a couple images below.  Each of these images are taken the same di
 
 ## Unsupervised Learning Method #1
 
-Hand engineering features can be a difficult process, but also very effective at obtaining intuitive results using very little to no annotated data, which defies most modern deep learning approaches.  Follow the "main" code to obtain segmentation results like so....
+Utilizing some more classic computer vision approaches can be time consuming and wrought with pain for the less creative scientists, but also very effective at obtaining intuitive results using very little to no annotated data, which defies most modern deep learning approaches.  Follow the "main" code to obtain segmentation results like so....
 <br/><br/>
 <img src="Data/high_moisture_corn_labels.png" width="350" hspace="30" align="left">  <img src="Data/high_moisture_overlay.png" width="350" hspace="0" align="right">
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
@@ -29,4 +29,4 @@ These results are pretty good, and all without annotated data!! From this we can
 
 ## Unsupervised Learning Method #2
 
-We can also use generative models to find properties, although the results may not be as intuitive.  This can include linear methods (PCA) and nonlinear methods (autoencoders and variational autoencoders).
+We can also use generative models to find properties, although the results may not be as intuitive, and the optimization process can be easy to mess up for non-experts in statistics and optimization.  This can include linear methods (PCA) and nonlinear methods (autoencoders and variational autoencoders).
