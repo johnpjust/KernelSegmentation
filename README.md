@@ -1,23 +1,23 @@
 # Unsupervised Grain Kernel Properties Extraction
 
-We need to extract properties from grains to support downstream tasks.  Essentially this is feature extraction.
+We need to estimate properties of grains from images to support downstream predictive and physical modeling tasks by other systems on harvesters.  Essentially this is feature extraction, or feature engineering.
 
-Let's examine a couple images below.  Each of these images are taken the same distance from the glass behind which the grain sits.  On the left is low moisture corn, which generally has small kernels.  On the right we have high moisture corn, which generally has large swollen (larger) kernels.
+Each of the example images are taken the same distance from the glass behind which the grain sits.  On the left is low moisture corn, which generally has small kernels.  On the right we have high moisture corn, which generally has large swollen (larger) kernels.
 
 
 <img src="Data/NG3_GQ_Corn_11MC_59lbs_50F_2017-11-16_11-0-33_Sensor-1_Frame-36_Ts-1510851850.1548.png" width="400" hspace="10" align="left">  <img src="Data/NG3_GQ_Corn_32MC_53lbs_99F_2017-7-18_10-31-45_Sensor-1_Frame-32_Ts-1500374550.1573.png" width="400" align="right">
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-## Unsupervised Learning Method #1
+## Morphological Feature Extraction of Grain and MOG
 
-Utilizing some more classic computer vision approaches can be time consuming and wrought with pain since it generally requries quite a bit of creativity compared with deep learning approaches.  However it can be very effective at obtaining intuitive results using very little to no annotated data, which defies most modern deep learning approaches.  Follow the "main" code to obtain segmentation results like so....
+One approach involves stacking a lot of preprocessing steps followed by fine-tuned/engineered operations such as filters and morphological image processing methods to obtain intuitive features.  The nice part about this approach is that it's fully transparent...i.e. we can "peer inside" the process to see how it's working.  The results for the high and low moisture images are below. 
 <br/><br/>
 <img src="Data/high_moisture_corn_labels.png" width="350" hspace="30" align="left">  <img src="Data/high_moisture_overlay.png" width="350" hspace="0" align="right">
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/>
 <br/>
-And like so........
+And low moisture image........
 <br/><br/>
 <img src="Data/low_moisture_corn_labels.png" width="350" hspace="30" align="left">  <img src="Data/low_moisture_overlay_corn.png" width="350" hspace="0" align="right">
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
@@ -27,6 +27,6 @@ These results are pretty good, and all without annotated data!! From this we can
 <br/><br/>
 
 
-## Unsupervised Learning Method #2
+## Unsupervised Deep Learning
 
 We can also use generative models to find properties, although the results may not be as intuitive, and the optimization process can be easy to mess up for non-experts in statistics and optimization.  This can include linear methods (PCA) and nonlinear methods (autoencoders and variational autoencoders).
