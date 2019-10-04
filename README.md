@@ -29,4 +29,4 @@ These results are pretty good, and all without annotated data!! From this we can
 
 ## Unsupervised Learning Method #2
 
-We can also use generative models to find properties.  This can include linear methods (PCA) and nonlinear methods (autoencoders and variational autoencoders).
+We can also use generative models to find properties, although the results may not be as intuitive.  This can include linear methods (PCA) and nonlinear methods (autoencoders and variational autoencoders).
