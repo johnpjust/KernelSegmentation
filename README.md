@@ -23,7 +23,7 @@ And low moisture image........
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/>
 <br/>
-To obtain features (e.g. aspect ratio and area).
+To obtain physical/interpretable features (e.g. aspect ratio and area).
 <br/><br/>
 <img src="Data/aspect_ratio.png" width="350" hspace="30" align="left">  <img src="Data/area.png" width="350" hspace="0" align="right">
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
