@@ -11,7 +11,7 @@ Each of the example images are taken the same distance from the glass behind whi
 
 ## Morphological Feature Extraction of Grain and MOG
 
-One approach involves stacking a lot of preprocessing steps followed by fine-tuned/engineered operations such as filters and morphological image processing methods to obtain intuitive features.  The nice part about this approach is that it's fully transparent...i.e. we can "peer inside" the process to see how it's working.  The results for the high and low moisture images are below. 
+One approach involves stacking a lot of preprocessing steps followed by fine-tuned/engineered operations such as filters and morphological image processing methods to obtain intuitive features.  The nice part about this approach is that it's fully transparent...i.e. we can "peer inside" the process to see how it's working.  For physical modeling tasks this approach is almost required, since deep representation learning approaches cannot guarentee interpretable features.  The results for the high and low moisture images are below. 
 <br/><br/>
 <img src="Data/high_moisture_corn_labels.png" width="350" hspace="30" align="left">  <img src="Data/high_moisture_overlay.png" width="350" hspace="0" align="right">
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
