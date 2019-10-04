@@ -23,6 +23,12 @@ And low moisture image........
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/>
 <br/>
+To obtain features (e.g. aspect ratio and area).
+<br/><br/>
+<img src="Data/aspect_ratio.png" width="350" hspace="30" align="left">  <img src="Data/area.png" width="350" hspace="0" align="right">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/>
+<br/>
 These results are pretty good, and all without annotated data!! From this we can extract properties like area and aspect ratio, as well as other factors like colors to classify object instances without labels (clustering).
 <br/><br/>
 
