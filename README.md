@@ -20,3 +20,8 @@ Follow the "main" code to obtain segmentation results like so....
 And like so........
 <br/><br/>
 <img src="Data/low_moisture_corn_labels.png" width="350" hspace="30" align="left">  <img src="Data/low_moisture_overlay_corn.png" width="350" hspace="0" align="right">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/>
+<br/>
+From this we can extract properties like area and aspect ratio, as well as other factors like colors to classify kernels without labels (clustering).
+<br/><br/>
