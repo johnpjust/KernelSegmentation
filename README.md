@@ -11,7 +11,7 @@ Let's examine a couple images below.  Each of these images are taken the same di
 
 ## Unsupervised Learning Method #1
 
-Follow the "main" code to obtain segmentation results like so....
+Hand engineering features can be a difficult process, but also very effective at obtaining intuitive results using very little to no annotated data, which defies most modern deep learning approaches.  Follow the "main" code to obtain segmentation results like so....
 <br/><br/>
 <img src="Data/high_moisture_corn_labels.png" width="350" hspace="30" align="left">  <img src="Data/high_moisture_overlay.png" width="350" hspace="0" align="right">
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
