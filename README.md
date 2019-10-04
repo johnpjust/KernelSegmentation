@@ -23,7 +23,7 @@ And like so........
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/>
 <br/>
-These results are pretty good, and all without annotated data!! From this we can extract properties like area and aspect ratio, as well as other factors like colors to classify kernels without labels (clustering).
+These results are pretty good, and all without annotated data!! From this we can extract properties like area and aspect ratio, as well as other factors like colors to classify object instances without labels (clustering).
 <br/><br/>
 
 
